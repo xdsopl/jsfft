@@ -1,4 +1,5 @@
 NODE  = node
+GNUPLOT = gnuplot
 
 test:
 	$(NODE) testbench.js 1
@@ -62,3 +63,5 @@ test:
 	$(NODE) testbench.js 48000
 	$(NODE) testbench.js 65536
 
+sweep:
+	$(GNUPLOT) sweep.gp
